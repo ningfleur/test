@@ -866,11 +866,11 @@ span.bg_color {
 }
 
 .slideframe {
-  display: -webkit-box;
+  /*display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      flex-wrap: wrap;*/
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1/13;
@@ -878,7 +878,7 @@ span.bg_color {
 
 .slider .item {
   background-color: rgba(114, 189, 185, 0.2);
-  width: calc(100% / 3);
+  /*width: calc(100% / 3);*/
   position: relative;
   height: 248px;
 }
