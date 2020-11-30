@@ -331,7 +331,12 @@ p.subhead {
   font-weight: 300;
   margin-top: 20px;
   letter-spacing: 0.05rem;
+  max-width: 450px;
 }
+
+span.brk {
+    display: inline-block;
+  }
 
 p.meta {
   font-size: 0.75rem;
@@ -471,11 +476,13 @@ img.ele03 {
     grid-column: 1/13;
     padding-top: 40px;
   }
-
   h1 {
     font-size: 36px;
     line-height: 46px;
     text-align: center;
+  }
+  span.brk {
+    display: block;
   }
   p.subhead {
     font-size: 14px;
@@ -931,7 +938,6 @@ span.bg_color {
   p.quote_L {
     font-size: 1.25rem;
   }
-
 }
 
 
@@ -1001,47 +1007,43 @@ span.bg_color {
     justify-content: center;
     margin-bottom: 80px;
   }
-
   section.experts {
     padding-left: 15px;
     padding-right: 15px;
   }
-
  .infogroup {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%
   }
-
   .mo-rr {
     flex-direction: row-reverse;
   }
-
   .name_set {
     text-align: left;
     margin-left: 20px; 
     margin-right: 0; 
     }
-
   .infogroup .name_set .right {
     text-align: right;
     margin-left: 20px;
     margin-right: 0;
   }
-
   .expert_text {
     width: 100%;
     margin-top: 20px;
   }
-
   .r-reverse {
   flex-direction: column;
   }
+  .mo-mb-100 {
+  margin-bottom: 100px;
+}
 }
 
 
-// slideframe
+// slideframe 
 .slideframe {
   // display: flex;
   // flex-wrap: wrap;
@@ -1054,6 +1056,7 @@ span.bg_color {
   position: relative;
   height: 248px;
 }
+// 使用slick，移除寬度。
 
 .slider .item a {
   display: block;
@@ -1070,6 +1073,8 @@ span.bg_color {
   padding-bottom: 10px;
   position: absolute;
   bottom: 0;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(255,255,255,0) 80%);
 }
 
 .slider .item01 {
@@ -1121,7 +1126,6 @@ span.bg_color {
   background-repeat: no-repeat;
 }
 
-
 .btn_more_slide {
   font-size: 1rem;
   font-weight: 400;
@@ -1150,15 +1154,14 @@ span.bg_color {
   border: 1px solid $secondary;
 } 
 
-
+// tablet
 @media (max-width: 768px) {
   .slideframe {
-    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  .slider .item {
-  width: 100%;
-  position: relative;
-  height: 248px;
+  .mo-mb-100 {
+  margin-bottom: 100px;
 }
 }
 
@@ -1240,24 +1243,23 @@ a.act_button:hover .btn_more i{
     padding: 40px 40px 20px 40px;
     margin-bottom: 30px;
   }
-
  .btn_group {
     flex-direction: column;
     margin-right: 15px;
     margin-left: 15px;
   }
-
   a.act_button:nth-child(2) {
   margin-left: 0;
   }
-
   .sub {
   font-size: 20px;
   }
-
   .title_page {
   font-size: 32px;
   }
+  .mo-mb-100 {
+  margin-bottom: 100px;
+}
 }
 
 
@@ -1316,7 +1318,25 @@ ul.buy_more li {
   background-color: $blue_primary;
   color: #ffffff;
 }
-
+// mobile ad
+@media (max-width: 375px) {
+  p.h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  }
+  ul.buy_more li {
+  margin-bottom: 20px;
+}
+  .buy_more li a {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .buy_more li a i {
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+  }
+}
 
 // sponsor
 .sponsor {

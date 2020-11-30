@@ -177,7 +177,8 @@
       <div class="cover_headline">
         <h1>誰是素養新人才？</br>
           11句話務實作夢</h1>
-        <p class="subhead">有人念兩次大學，有人休學，也有人放棄名校。</br>他們發光卻有相同原因：勇敢踏實地做最想做的事。</p>
+        <p class="subhead"><span class="brk">有人念兩次大學，有人休學，也有人放棄名校。</span><span class="mo-brk">他們發光卻有相同原因：</span><span
+            class="brk">勇敢踏實地做最想做的事。</span></p>
         <p class="meta">最後更新時間 | 2020.11.6</p>
       </div>
       <div class="cover_images">
@@ -500,7 +501,7 @@
   </section>
 
   <!-- slider -->
-  <section class="slideshow mb-150">
+  <section class="slideshow mb-150 mo-mb-100">
     <div class="slider grid">
       <div class="slideframe autoplay">
         <div class="item item01">
@@ -600,15 +601,6 @@
   </footer>
 
 
-
-  <!-- <script type="text/javascript" src="https//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
-  <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
-    -->
-  <!-- <script type="text/javascript" src="js/test.js"></script> -->
-
-
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script type="text/javascript" src="js/slick.js"></script>
   <script src="js/all.js"></script>
@@ -621,6 +613,26 @@
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 2000,
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 2000,
+            }
+          }
+        ]
       });
     });
   </script>

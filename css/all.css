@@ -86,6 +86,11 @@ p.subhead {
   font-weight: 300;
   margin-top: 20px;
   letter-spacing: 0.05rem;
+  max-width: 450px;
+}
+
+span.brk {
+  display: inline-block;
 }
 
 p.meta {
@@ -230,6 +235,9 @@ img.ele03 {
     font-size: 36px;
     line-height: 46px;
     text-align: center;
+  }
+  span.brk {
+    display: block;
   }
   p.subhead {
     font-size: 14px;
@@ -863,6 +871,9 @@ span.bg_color {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .mo-mb-100 {
+    margin-bottom: 100px;
+  }
 }
 
 .slideframe {
@@ -892,6 +903,9 @@ span.bg_color {
   padding-bottom: 10px;
   position: absolute;
   bottom: 0;
+  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), color-stop(80%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 80%);
 }
 
 .slider .item01 {
@@ -985,15 +999,11 @@ span.bg_color {
 
 @media (max-width: 768px) {
   .slideframe {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  .slider .item {
-    width: 100%;
-    position: relative;
-    height: 248px;
+  .mo-mb-100 {
+    margin-bottom: 100px;
   }
 }
 
@@ -1108,6 +1118,9 @@ a.act_button:hover .btn_more i {
   .title_page {
     font-size: 32px;
   }
+  .mo-mb-100 {
+    margin-bottom: 100px;
+  }
 }
 
 .cw-ad {
@@ -1174,6 +1187,25 @@ ul.buy_more li {
   border: 1px solid #086A87;
   background-color: #086A87;
   color: #ffffff;
+}
+
+@media (max-width: 375px) {
+  p.h4 {
+    font-size: 26px;
+    line-height: 1.5;
+  }
+  ul.buy_more li {
+    margin-bottom: 20px;
+  }
+  .buy_more li a {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .buy_more li a i {
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+  }
 }
 
 .sponsor {
