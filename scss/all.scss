@@ -1050,7 +1050,7 @@ span.bg_color {
 
 .slider .item {
   background-color: $green_light;
-  width: calc(100% / 3);
+  // width: calc(100% / 3);
   position: relative;
   height: 248px;
 }
@@ -1088,14 +1088,6 @@ span.bg_color {
   background-repeat: no-repeat;
 }
 
-.slider .item02 {
-  background-image: url(../images/slider/img_02.jfif);
-  background-size: cover;
-  background-position: center center;
-  overflow: hidden;
-  background-repeat: no-repeat;
-}
-
 .slider .item03 {
   background-image: url(../images/slider/img_03.jfif);
   background-size: cover;
@@ -1104,6 +1096,31 @@ span.bg_color {
   overflow: hidden;
   background-repeat: no-repeat;
 }
+
+.slider .item04 {
+  background-image: url(../images/slider/img_04.jfif);
+  background-size: cover;
+  background-position: center left;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.slider .item05 {
+  background-image: url(../images/slider/img_05.jfif);
+  background-size: cover;
+  background-position: center left;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.slider .item06 {
+  background-image: url(../images/slider/img_06.jfif);
+  background-size: cover;
+  background-position: center left;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
 
 .btn_more_slide {
   font-size: 1rem;
