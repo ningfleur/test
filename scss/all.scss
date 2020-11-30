@@ -4,7 +4,7 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
-  outline: 1px solid lightgreen; 
+  // outline: 1px solid lightgreen; 
 }
 
 body {
@@ -1043,8 +1043,8 @@ span.bg_color {
 
 // slideframe
 .slideframe {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
   grid-column: 1/13;
 }
 
