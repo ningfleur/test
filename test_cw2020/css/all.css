@@ -1,0 +1,126 @@
+@charset "UTF-8";
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Noto Sans TC", "微軟正黑體", "Microsoft JhengHei", "PingFang", sans-serif;
+  background-color: #F4F4F4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #000000;
+  font-weight: 400;
+}
+
+.grid3-11 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 8;
+  grid-column: 3/11;
+}
+
+.grid2-12 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2/12;
+}
+
+.grid1-13 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+}
+
+/*--------cover--------*/
+.grid {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 15px;
+  margin: 80px auto 0;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E2E2E2;
+}
+
+.title-block {
+  max-width: 1200px;
+  max-width: 631px;
+  /* 這行來控制標題寬度*/
+  /* 父親曾已經設定flex致中對其，這裡不需要再設。如果要讓文字齊左，才要設寬度100%，*/
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 85px;
+  font-weight: 800;
+  margin: 0;
+}
+
+p.subhead {
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 300;
+  margin-top: 26px;
+}
+
+p.header-meta {
+  white-space: pre-wrap;
+  font-size: 12px;
+  line-height: 1.65;
+  font-weight: 300;
+  padding-top: 60px;
+}
+
+.grid4-10 {
+  grid-column: 4 / 10;
+}
+
+
+h2 {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+
+
+/* footer */
+footer {
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+footer span {
+  font-size: 0.75em;
+  line-height: 1.5;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .mo-mb-100 {
+    margin-bottom: 100px;
+  }
+}
