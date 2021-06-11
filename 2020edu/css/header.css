@@ -5,8 +5,8 @@ nav .fullscreen ul {
 }
 
 nav {
-  font-family: "Roboto", "Noto Sans TC", "Ã¥Â¾Â®Ã¨Â»Å¸Ã¦Â­Â£Ã©Â»â€˜Ã©Â«â€", "Microsoft JhengHei",
-    PingFang, sans-serif;
+  font-family: "Roboto", "Noto Sans TC", "Microsoft JhengHei",
+    "PingFang", sans-serif;
   position: fixed;
   top: 0;
   left: 0;
