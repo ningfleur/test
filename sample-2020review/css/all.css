@@ -587,10 +587,6 @@ nav .ham.active .ham-button b:nth-child(3) {
           transform: translateY(-10px) translateX(0) rotate(-45deg);
 }
 
-nav .ham.active nav .ham::after {
-  content: 'close';
-}
-
 /* 選單內容 */
 nav .fullscreen {
   position: fixed;
@@ -615,6 +611,10 @@ nav .fullscreen.open {
   visibility: visible;
   min-height: 100%;
   z-index: 1002;
+}
+
+nav .ham.active nav .ham::after {
+  content: 'close';
 }
 
 nav .wrap_menu {
