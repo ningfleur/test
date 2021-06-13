@@ -301,7 +301,7 @@ strong {
   }
 }
 
-.month_nav .anchor:hover, .anchor:active {
+.month_nav a.anchor:hover, a.anchor:active {
   color: rgba(0, 0, 0, 0.6);
   border-left: 3px solid rgba(0, 0, 0, 0.6);
   @include pad {
@@ -309,6 +309,8 @@ strong {
     border-bottom: 3px solid rgba(0, 0, 0, 0.6);
   }
 }
+
+
 
 .month_nav a span {
   margin-left: -2px;
