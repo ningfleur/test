@@ -43,6 +43,41 @@ nav .ham {
   @include mobile {
     margin: 12px 10px 0 0;
   }
+
+  &::after {
+    content: 'menu';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    transition-duration: 0.3s;
+    @include pad {
+      color: #ffffff;
+    }
+  }
+
+  &:hover {
+    &::after {
+      color: #000000;
+    }
+  }
+  
+  &.active {
+    .ham-button b:nth-child(1) {
+      transform: translateY(10px) translateX(0) rotate(45deg);
+    }
+    .ham-button b:nth-child(2) {
+      opacity: 0;
+    }
+    .ham-button b:nth-child(3) {
+      transform: translateY(-10px) translateX(0) rotate(-45deg);
+    }
+    &::after {
+      content: 'close';
+    }
+  }
 }
 
 nav .ham .ham-button {
@@ -83,30 +118,6 @@ nav .ham .ham-button b:nth-child(3) {
   transition: 0.5s all;
 }
 
-nav .ham::after {
-  content: 'menu';
-  display: block;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  transition-duration: 0.3s;
-  @include pad {
-    color: #ffffff;
-  }
-}
-
-/* active */
-nav .ham.active .ham-button b:nth-child(1) {
-  transform: translateY(10px) translateX(0) rotate(45deg);
-}
-nav .ham.active .ham-button b:nth-child(2) {
-  opacity: 0;
-}
-nav .ham.active .ham-button b:nth-child(3) {
-  transform: translateY(-10px) translateX(0) rotate(-45deg);
-}
 
 
 /* 選單內容 */
@@ -133,10 +144,6 @@ nav .fullscreen.open {
   z-index: 1002;
 }
 
-nav .ham.active nav .ham::after {
-  content: 'close';
-}
- 
 nav .wrap_menu {
   width: 100%;
   height: 100%;
