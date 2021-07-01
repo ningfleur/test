@@ -154,7 +154,6 @@ p.subhead {
 p.description {
   font-size: 16px;
   line-height: 1.8;
-  grid-column: 4 / 10;
 }
 
 p.header-meta {
@@ -301,8 +300,7 @@ strong {
   }
 }
 
-.month_nav .anchor:hover,
-.month_nav .anchor:active {
+.month_nav .anchor:hover {
   color: rgba(0, 0, 0, 0.3);
   border-left: 3px solid rgba(0, 0, 0, 0.3);
   @include pad {
